@@ -35,7 +35,7 @@ class Song
             lyrics = fetcher.search(@artist,@name)
             @lyrics = lyrics.body.split('\n') # array of lyrics
         rescue
-            @lyrics = ["Sorry, no lyrics found."]
+            @lyrics = ["Sorry, no lyrics found"]
         end
     end
 end
